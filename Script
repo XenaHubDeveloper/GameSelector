@@ -1,0 +1,78 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local GameSelector = Instance.new("ScreenGui")
+local SelectorUI = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local PrisonLifeSelector = Instance.new("TextButton")
+local TopPannel = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+GameSelector.Name = "GameSelector"
+GameSelector.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+GameSelector.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+SelectorUI.Name = "SelectorUI"
+SelectorUI.Parent = GameSelector
+SelectorUI.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+SelectorUI.BorderColor3 = Color3.fromRGB(33, 33, 33)
+SelectorUI.Position = UDim2.new(0.317387998, 0, 0.267484665, 0)
+SelectorUI.Size = UDim2.new(0, 481, 0, 378)
+
+ImageLabel.Parent = SelectorUI
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.Position = UDim2.new(0.0250000004, 0, 0.105820112, 0)
+ImageLabel.Size = UDim2.new(0, 142, 0, 111)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=958491230"
+
+PrisonLifeSelector.Name = "PrisonLifeSelector"
+PrisonLifeSelector.Parent = SelectorUI
+PrisonLifeSelector.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+PrisonLifeSelector.Position = UDim2.new(0.0434836745, 0, 0.432728231, 0)
+PrisonLifeSelector.Size = UDim2.new(0, 124, 0, 50)
+PrisonLifeSelector.Style = Enum.ButtonStyle.RobloxButton
+PrisonLifeSelector.Font = Enum.Font.SourceSans
+PrisonLifeSelector.Text = "Admin"
+PrisonLifeSelector.TextColor3 = Color3.fromRGB(255, 255, 255)
+PrisonLifeSelector.TextSize = 27.000
+
+TopPannel.Name = "TopPannel"
+TopPannel.Parent = SelectorUI
+TopPannel.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+TopPannel.BorderColor3 = Color3.fromRGB(21, 21, 21)
+TopPannel.Position = UDim2.new(-0.00136206101, 0, -0.0790761709, 0)
+TopPannel.Size = UDim2.new(0, 481, 0, 29)
+
+TextLabel.Parent = TopPannel
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.291666657, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 29)
+TextLabel.Font = Enum.Font.Roboto
+TextLabel.Text = "Game Selector"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+-- Scripts:
+
+local function XQRUC_fake_script() -- PrisonLifeSelector.LocalScript 
+	local script = Instance.new('LocalScript', PrisonLifeSelector)
+
+	script.Parent.MouseButton1Down:Connect(function()
+	script.Parent.Parent.Visible = false
+	end)
+	
+	wait (0.2)
+	function Click()
+	
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/jefflol1209/XenaHub/main/Script",true))();
+	end
+	script.Parent.MouseButton1Down:connect(Click) 
+end
+coroutine.wrap(XQRUC_fake_script)()
