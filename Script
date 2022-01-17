@@ -62,7 +62,7 @@ local function URUEX_fake_script() -- PrisonLifeSelector.LocalScript
 	wait (0.2)
 	function Click()
 	
-		https://raw.githubusercontent.com/XenaHubDeveloper/XenaHub/main/Script
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/XenaHubDeveloper/XenaHub/main/Script",true))();
 	end
 	script.Parent.MouseButton1Down:connect(Click) 
 end
