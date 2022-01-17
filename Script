@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local GameSelector = Instance.new("ScreenGui")
 local SelectorUI = Instance.new("Frame")
 local ImageLabel = Instance.new("ImageLabel")
@@ -36,7 +31,7 @@ PrisonLifeSelector.Position = UDim2.new(0.0434836745, 0, 0.432728231, 0)
 PrisonLifeSelector.Size = UDim2.new(0, 124, 0, 50)
 PrisonLifeSelector.Style = Enum.ButtonStyle.RobloxButton
 PrisonLifeSelector.Font = Enum.Font.SourceSans
-PrisonLifeSelector.Text = "Admin"
+PrisonLifeSelector.Text = "PrisonLife"
 PrisonLifeSelector.TextColor3 = Color3.fromRGB(255, 255, 255)
 PrisonLifeSelector.TextSize = 27.000
 
